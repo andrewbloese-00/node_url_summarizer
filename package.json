@@ -1,0 +1,31 @@
+{
+  "name": "node_url_summarizer",
+  "version": "0.0.1",
+  "description": "a command line utility function to scrape and summarize the contents of a url. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewbloese-00/node_url_summarizer.git"
+  },
+  "keywords": [
+    "node",
+    "chatgpt",
+    "openai",
+    "summarizer",
+    "cli",
+    "command",
+    "line"
+  ],
+  "author": "Andrew Bloese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewbloese-00/node_url_summarizer/issues"
+  },
+  "homepage": "https://github.com/andrewbloese-00/node_url_summarizer#readme",
+  "dependencies": {
+    "puppeteer": "^20.8.3"
+  }
+}
