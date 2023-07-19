@@ -33,7 +33,3 @@ npm install --save
     node index.js --url="<some-url-here>" --temperature="0.5" --format="A bullet point list with complete sentences" 
 
 ```
-
-
-
-```
