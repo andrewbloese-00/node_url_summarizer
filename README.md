@@ -17,7 +17,7 @@ npm install --save
 {
     "OPENAI_API_KEY": <paste your openai api key here>
 }
-
+```
 
 3. Call the script
 ### Arguments
@@ -28,7 +28,8 @@ npm install --save
 * temperature - adjust the temperature of the gpt model using this argument. It defaults to 0.1 if unset by arguments. 
 
 
-#### Example
+### Example
+
 ```
     node index.js --url="<some-url-here>" --temperature="0.5" --format="A bullet point list with complete sentences" 
 
