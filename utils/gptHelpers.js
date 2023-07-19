@@ -26,10 +26,10 @@ async function summaryCompletion(input,temperature=0.1,format="tl;dr like summar
         })
         
         const summary = response.data.choices[0].message.content;
-        
         if(!summary) return { error: "Failed to generate a summary..."}
         return { summary }
     } catch (error) {
+        
         return { error }
     }
 }
