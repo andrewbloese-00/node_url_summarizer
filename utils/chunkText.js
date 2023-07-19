@@ -5,6 +5,7 @@ function chunkText(text) {
 
     // Check if text is within the token limit
     if ( (text.length/4) <= TOKEN_LIMIT) {
+      console.log('single chunk')
       return [text];
     }
   
