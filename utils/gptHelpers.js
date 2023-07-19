@@ -58,7 +58,7 @@ async function summarize(text = "",temperature=0.1,format="tl;dr like summary in
         .map(s=>s.summary)
         .join("\n")
     
-    return summarize(summaryText,temperature,st)
+    return summarize(summaryText,temperature,format)
 }
 
 

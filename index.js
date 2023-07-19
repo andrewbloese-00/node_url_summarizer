@@ -2,11 +2,6 @@ const { scrapePageText }=require("./utils/scraper")
 const { summarize } = require("./utils/gptHelpers")
 const { getArgs} = require("./utils/argParse")
 
-
-
-
-
-
 async function main(){
     const args = getArgs(process)
     if(!args.url){
@@ -22,8 +17,8 @@ async function main(){
         process.exit(1)
     }
     console.timeEnd(`scrape ${args.url}`)
-    let temperature = Number(args.temperature) || 0.1,
-    format = args.format || "A tl;dr style summary in paragraph format. "
+    let temperature = Number(args.temperature) || 0.1;
+    let format = args.format || "A tl;dr style summary in paragraph format. "
     
     console.time("Generate Summary")
     const { summary , error } = await summarize(scrape.text, temperature,format)
